@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.NavMain {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100vw;
+    height: 80px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.n2{
+    display: none;
+}
+.NavMain span{
+
+    font-weight: bold;
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+.Navpt1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+
+.Navpt1 li {
+    list-style: none;
+    color: white;
+}
+
+.button {
+    background-color: white;
+    height: 38px;
+    width: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 1vw;
+}
+
+.Navpt2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 17%;
+    padding-right: 7vw;
+    
+}
+
+.MainText span{
+
+    font-weight: bold;
+    font-size: 24px;
+    margin-left:7vw ;
+}
+
+.d{
+    display: none;
+}
+/* .n2{
+    display: none;
+} */
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .g{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .g li {
+        color: white;
+        text-decoration: none;
+        list-style-type: none; /* Removes default list-style (bullet or number) */
+        font-size: 15px;
+    }
+    
+
+    .n2{
+        height: 200px;
+        width: 103vw;
+        background-color: black;
+        transition: height 0.3s ease-in-out;
+    }
+
+    .d {
+        display: block; /* or any other appropriate display value */
+    }
+
+    .NavMain{
+        justify-content: space-between;
+        /* width: 700px; */
+        width: 98vw;
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .MenuM{
+        height: 30px;
+        width: 30px;
+        color: white;
+    }
+
+    .Navpt1 li{
+        display: none;
+    }
+
+    .Navpt2{
+        display: none;
+    }
+
+    .Navpt3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .n2{
+        display: block;
+        transition: height 0.3s ease-in-out;
+    }
+
+    .button1{
+        height: 40px;
+        width: 100px;
+        font-size: 15px;
+        font-weight:500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+    }
+/*     
+.MainText span{
+
+    font-weight: bold;
+    font-size: 24px;
+    margin-left:7vw ;
+} */
+
+
+    .NavMain span{
+        font-size: 17px;
+        margin-left: 5px;
+    }
+
+    
+
+    .Navpt1 li{
+        font-size: 10px;
+    }
+
+    .Navpt2{
+        width: 20%;
+    }
+   
+
+    .button {
+        width: 100%; /* Make the button take the full width on smaller screens */
+        height: 28px;
+        width: 55px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+
+    .NavMain{
+        width: 101%;
+    }
+
+    .MainText span{
+        font-size: 22px;
+    }
+    .Navpt1{
+        width: 60%;
+    }
+    .Navpt1 li{
+        font-size: 15px;
+        margin-left: 2px;
+    }
+    .Navpt2{
+        width: 40%;
+        padding-right: 1vw;
+    }
+    .button{
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .NavMain{
+        width: 102%;
+        overflow: hidden;
+    }
+    .n2{
+        height: 200px;
+        width: 102%;
+        transition: height 2s ease-in-out;
+    }
+}
+
+
+

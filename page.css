@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Main{
+   
+    display: flex;
+    flex-direction: column;
+    justify-self:  center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+/* Update the styling for the popup container to center it */
+.LoginPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2; /* Ensure the popup is on top of the overlay */
+
+    height: 520px;
+    width: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PopM{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-left:30px ; */
+
+}
+.M{
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.google{
+    width: 300px;
+    height: 37px;
+    border: 2px solid #007BFF;
+    border-radius: 3px;
+    /* background-color: black; */
+    /* color: white;  */
+    /* Set the text color to white or any contrasting color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.google1{
+    width: 300px;
+    height: 37px;
+    border: 2px solid #007BFF;
+    border-radius: 3px;
+    /* background-color: black; */
+    /* color: white;  */
+    /* Set the text color to white or any contrasting color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+/* Remove justify-content and align-items from the overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: 1; /* Ensure the overlay is on top of other elements */
+}
+
+/* Styling for the close button */
+.LoginPopup button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+}
+
+/* Show the overlay and popup when isLoginPopupVisible is true */
+.Main.isLoginPopupVisible .overlay,
+.Main.isLoginPopupVisible .LoginPopup {
+    display: flex;
+}
+
+.inputContainer {
+    /* width: 300px;
+    height: 40px; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .inputContainer label {
+    margin-bottom: 5px;
+  }
+  
+  .inputContainer input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 300px; /* Adjust the width as needed */
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+  }
+
+  .bt{
+    width: 300px;
+    height: 40px;
+  }
+  
+  /* Add this style to your CSS */
+.orLine {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .orLine::before,
+  .orLine::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #979595;
+    margin: 0 10px;
+  }
+  
+  .orLine span {
+    color: #888;
+    font-weight: bold;
+  }
+
+
+  
+.loader {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #1e2b01;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
